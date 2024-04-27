@@ -1,0 +1,2 @@
+pocket base 실행 : ./pocketbase serve
+svelte 실행 : npm run dev
