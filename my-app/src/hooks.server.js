@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-kitHandle
-=======
 import { pb } from '$lib/pocketbase';
 
 /** @type {import('@sveltejs/kit').Handle} */
