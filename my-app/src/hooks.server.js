@@ -30,4 +30,3 @@ export async function handle({ event, resolve }) {
 
     return response;
 }
->>>>>>> 1e17e289df183efff772d020d89406cce2a18882
