@@ -1,2 +1,5 @@
-pocket base 실행 : ./pocketbase serve
+pocketbase 실행 : ./pocketbase serve
+pocketbase 연결 : npm install pocketbase
 svelte 실행 : npm run dev
+
+* 폴더 경로 이동 후 진행
