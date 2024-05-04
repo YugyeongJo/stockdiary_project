@@ -10,6 +10,5 @@
             <li><a href="#" class="secondary">...</a></li>
         </ul>
     </nav>
-    
     <slot />
 </div>
