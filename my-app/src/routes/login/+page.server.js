@@ -15,8 +15,9 @@ export const actions = {
         const data = Object.fromEntries(formData);
         
         try {
-            // @ts.ignore
-            await locals.pb.collection('users').authWithPassword(data.email, data.password);
+            const email = data.email.toString();
+            const password = data.password.toString();
+            await locals.pb.collection('users').authWithPassword(email, password);
         } catch (e) {
             console.error(e);
             throw e;
