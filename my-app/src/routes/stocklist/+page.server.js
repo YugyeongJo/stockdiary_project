@@ -6,7 +6,8 @@ export async function load({ locals }) {
         throw redirect(303, '/login');
     }
 
-    const data = await locals.pb.collection('stocklist').getOne(); // PocketBase 컬렉션 이름에 맞게 수정
+    const data = await locals.pb.collection('stocklist').getOne('RECORD_ID'); 
+
     return {
         props: {
             stockData: data
