@@ -13,4 +13,6 @@ export async function load({ locals }) {
             stockData: data
         }
     };
+
 }
+

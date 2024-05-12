@@ -6,7 +6,12 @@
     export let stockData;
 </script>
 
-<h1>간단한 게시판</h1>
+<svelte:head>
+  <title>구매 종목 리스트</title>
+  <meta name="stocklist" content="구매 종목 리스트" />
+</svelte:head>
+
+<h1>구매 종목 리스트</h1>
 
 <button on:click={openNewPostWindow}>새 글 작성</button>
 
