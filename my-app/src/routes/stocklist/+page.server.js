@@ -6,13 +6,10 @@ export async function load({ locals }) {
         throw redirect(303, '/login');
     }
 
-    const data = await locals.pb.collection('stocklist').getOne('RECORD_ID'); 
-
+    const data = await locals.pb.collection('stocklist').getFullList({});
+    
     return {
-        props: {
-            stockData: data
-        }
+        data
     };
 
 }
-
