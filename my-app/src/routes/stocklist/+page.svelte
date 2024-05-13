@@ -3,10 +3,15 @@
     export let data;
     const stockData = data.data;
 
-// 각 데이터의 날짜 정보를 가공하는 함수
+    // 각 데이터의 날짜 정보를 가공하는 함수
     function formatDate(dateString) {
         const date = new Date(dateString);
         return date.toLocaleDateString();
+    }
+
+    // 새 글 작성 버튼 클릭 시 /stocklist/write로 이동하는 함수
+    function handleLinkClick() {
+        goto('/stocklist/write');
     }
 </script>
 
@@ -17,7 +22,8 @@
 
 <h1>구매 종목 리스트</h1>
 
-<button on:click={() => goto('./stocklist/write')}>새 글 작성</button>
+<!-- 새 글 작성 버튼 -->
+<button on:click={handleLinkClick}>새 글 작성</button>
 
 {#if stockData && stockData.length > 0}
     <table>
