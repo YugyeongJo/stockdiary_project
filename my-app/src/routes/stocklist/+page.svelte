@@ -33,6 +33,7 @@
                 <th>주식 종목</th>
                 <th>주식 수</th>
                 <th>날짜</th>
+                <th>상세보기</th>
             </tr>
         </thead>
         <tbody>
@@ -42,6 +43,7 @@
                     <td>{item.stock_name}</td>
                     <td>{item.stock_count}</td>
                     <td>{formatDate(item.date)}</td>
+                    <td><a href="http://"></a></td>
                 </tr>
             {/each}
         </tbody>
