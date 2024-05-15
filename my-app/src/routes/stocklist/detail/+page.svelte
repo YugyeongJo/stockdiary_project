@@ -1,3 +1,9 @@
+<script>
+    export let data;
+    const stockData = data.data;
+
+</script>
+
 <body>
     <h1>새글 작성</h1>
     <form method="POST">

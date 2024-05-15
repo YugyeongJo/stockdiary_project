@@ -43,7 +43,7 @@
                     <td>{item.stock_name}</td>
                     <td>{item.stock_count}</td>
                     <td>{formatDate(item.date)}</td>
-                    <td><a href="http://"></a></td>
+                    <td><a href=""></a></td>
                 </tr>
             {/each}
         </tbody>
